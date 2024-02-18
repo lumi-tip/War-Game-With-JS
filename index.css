@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: oswald, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: radial-gradient(#12ca49, #073b17); 
+}
+
+.header{
+    display: flex;
+    gap: 20px;
+}
+
+#new-deck{
+    padding:10px 20px;
+    border:none;
+    border-radius: 0 0 5px;
+    background-color: yellow;
+    font-size: 15px;
+}
+
+#new-deck:active{
+    transform: translate(1px,1px);
+}
+
+#remain-cards{
+    font-size: 20px;
+    align-self: center;
+    font-weight: normal;
+}
+
+h2{
+    text-align: center;
+}
+
+#ingame-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-wrapper{
+    width:150px;
+    height:200px;
+    border:2px solid rgb(241, 238, 23);
+    border-radius: 12px;
+    margin: 10px
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+}
+
+#draw-cards{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    background-color: yellow;
+    border:none;
+    font-size:20px;
+    cursor: not-allowed;
+}
+
+span{
+    color:rgb(255, 255, 255);
+    font-weight:500;
+}
+
+@media screen and (min-width: 700px){
+    #new-deck{
+        padding:10px 40px;
+        font-size: 20px;
+    }
+
+    .card-wrapper{
+        width:200px;
+        height:300px;
+    }
+
+    #draw-cards{
+        padding: 20px;
+    }
+
+    p{
+        font-size: 25px;
+    }
+
+    #remain-cards{
+        flex-grow:1
+    }
+
+    #war-el{
+        font-size:50px
+    }
+}
+
